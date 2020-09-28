@@ -1,0 +1,18 @@
+class AddArithmaticOperator{
+	public static void main(String args[])
+	
+		System.out.println("The addition of two num variables");
+		
+		int num1=10,num2=20;
+		int sum;
+		sum=num1+num2;
+		
+		System.out.println("The sum of two numbers 10 and 20 is :" +sum);
+		
+		sum=25+35;
+		System.out.println("The sum of two numbers 25 and 35 is :" +sum);
+		
+		System.out.println("The sum of two numbers :" +(34+45));
+		}
+		}
+		

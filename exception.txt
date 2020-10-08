@@ -1,0 +1,51 @@
+1. Difference between exception and error.
+
+    Exception                                                                
+
+* Exception is both checked and unchecked type.
+* Recovery can be done using try,catch and finally.
+* Exceptions are mainly caused by the application itself.
+* ex ; java.lang.StackOverflowError, java.lang.OutOfMemoryError
+
+    Error
+
+* Error is unchecked type.
+* Recovery cannot be done.
+* Errors are mainly caused by the environment in which an application is running.
+* ex ; Checked Exceptions : SQLException, IOException
+       Unchecked Exceptions : ArrayIndexOutOfBoundException, NullPointerException, ArithmeticException.
+
+2. Difference between checked and unchecked exception.
+
+    Checked
+
+* Checked exceptions occur at compile time.
+* The compiler checks a checked exception.
+* Here, the JVM needs the exception to catch and handle.
+* ex ; File Not Found Exception
+       No Such Method Exception
+       Class Not Found Exception
+
+    Unchecked
+
+* Unchecked exceptions occur at runtime.
+* The compiler does not check these types of exceptions.
+* Here, the JVM does not require the exception to catch and handle.
+* ex ; Arithmetic Exception
+       Null Pointer Exception
+       Array Index Out of Bounds Exception  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

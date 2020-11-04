@@ -12,6 +12,7 @@ public class CollectionExample {
 				arrayVal.add(true);
 				arrayVal.add(25.00);
 				arrayVal.add(null);
+				System.out.println(arrayVal.toString());
 				
 				System.out.println(arrayVal);//.tostring is overridden to display elements
 				System.out.println("Is collection empty "+arrayVal.isEmpty());// check collection is empty are not

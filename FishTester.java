@@ -31,7 +31,7 @@ public class FishTester {
 			System.out.println(f);
 		}
 		System.out.println("---------------------");
-		 System.out.println(fishArrayList.get(3));
+		 System.out.println("Last element "+fishArrayList.get(fishArrayList.size()-1));
 		 System.out.println("---------------------");
 		 Fish f5=new Fish("Guppy",true,"20g");
 		 fishArrayList.set(3,f5);

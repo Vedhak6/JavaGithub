@@ -14,17 +14,26 @@ public class ToyTester {
 		PriorityQueue <Toy> toyAL=new PriorityQueue<Toy>();
 		 toyAL.add(t1);
 		 toyAL.add(t2);
-		 toyAL.add(t3);
-		 toyAL.add(t4);
+		 toyAL.offer(t3);
+		 toyAL.offer(t4);
 		 System.out.println(toyAL);
+		 
+		 for(Toy i:toyAL) {
+			 System.out.println(i);
+		 }
+		 
+		 Iterator<Toy> ref=toyAL.iterator();
+		 while(ref.hasNext()) {
+			 System.out.println(ref.next());	 
+		 }
 		
-		 while(true) 
-			{
-			    Toy e = toyAL.poll();
-			    System.out.println(e);
-			     
-			    if(e == null) break;
-			}
+		System.out.println(toyAL.peek());
+		toyAL.poll();
+		System.out.println(toyAL);
+		toyAL.element();
+		System.out.println("toyAL.element :"+toyAL.element());
+		
+		
 	}
 
 }

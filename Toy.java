@@ -1,6 +1,6 @@
 package com.xworkz.queue;
 
-public class Toy {
+public class Toy implements Comparable<Toy> {
 	
 		private int price;
 		private boolean isMadeinIndia;
@@ -37,9 +37,13 @@ public class Toy {
 		public String toString() {
 			return "Toy [price=" + price + ", isMadeinIndia=" + isMadeinIndia + ", type=" + type + "]";
 		}
-		public int compareTo(Toy toyAL) {
-	        return this.getType().compareTo(toyAL.getType());
+
+		@Override
+		public int compareTo(Toy o) {
+			int result=this.price-o.price;
+			return result;
 		}
+		
 
 	}
 

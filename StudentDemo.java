@@ -1,10 +1,11 @@
 package com.xworkz.linkedlist;
 
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
-public class StudentTester {
+public class StudentDemo {
 
 	public static void main(String[] args) {
 		
@@ -21,6 +22,10 @@ public class StudentTester {
 		stu.add(s4);
 		stu.offer(s5);
 		System.out.println(stu);
+		
+		Comparator<Student> ref0=(o1,o2)->o1.getRollno()-o2.getRollno();
+		stu.sort(ref0);
+		System.out.println("Sorting name :" +stu);
 		
 		for(Student i:stu) {
 			System.out.println(i);

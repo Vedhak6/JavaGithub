@@ -25,7 +25,8 @@ public class VirusHSTester {
          while(ref.hasNext()) {
         	 System.out.println(ref.next());
          }
-		
+         System.out.println(" ");
+         virus.forEach((a)->System.out.println(a));
 	}
 
 }

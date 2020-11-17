@@ -26,8 +26,17 @@ public class TreeSetEx {
          while(ref.hasNext()) {
         	 System.out.println(ref.next());
          }
-       
+         System.out.println(" ");
+         color.forEach((a)->System.out.println(a));
 		
+         System.out.println(" ");
+		System.out.println("Floor :"+color.floor("Reds"));
+		System.out.println("ceiling :"+color.ceiling("Red"));
+		System.out.println("First :"+color.first());
+		System.out.println("Last :"+color.last());
+		
+		System.out.println("PollFirst :"+color.pollFirst());
+		System.out.println("PollLast :"+color.pollLast());
 		
 	}
 

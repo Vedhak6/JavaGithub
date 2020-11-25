@@ -1,6 +1,7 @@
 package com.xworkz.printingNumber;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayString extends Thread {
 
@@ -15,14 +16,24 @@ public class ArrayString extends Thread {
 		str.add("white");
 		str.add("black");
 		str.add("purple");
-		//System.out.println(str);
 		
-		str.forEach((a)->System.out.println(a));
+	//	Iterator<String> itr=str.iterator(); //other way to traverse
+	//		while(itr.hasNext()) {
+	//		System.out.println(itr.next());
 		
-	 System.out.println("Thread details :"+Thread.currentThread().getName());
+		str.forEach((a)->{
+				System.out.println(a);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
+		  }
+	 System.out.println("--------------");
 
 		
-		
-	}
+				
+	});
+		 System.out.println("Thread details :"+Thread.currentThread().getName());
 
-}
+   }}

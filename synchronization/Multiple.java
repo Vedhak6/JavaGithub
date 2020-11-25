@@ -1,8 +1,8 @@
 package com.xworkz.synchronization;
 
-public class Multipleof5 {
+public class Multiple extends Thread{
 	
-	synchronized void printMultipleof5(int num) {
+	synchronized void printMultiple(int num) {
 		
 		System.out.println("Thread details :" +Thread.currentThread().getName() );
 		 

@@ -6,12 +6,16 @@ public class MultipleTester {
 		
 		System.out.println("Thread details :" +Thread.currentThread().getName() );
 		
-		Multipleof5 mul=new Multipleof5();
-		mul.printMultipleof5(5);
+		Multiple multiple=new Multiple();
+		multiple.start();
 		
-		Multipleof7 mul2=new Multipleof7();
-		mul2.printMultipleof7(7);
+		Runnable r1 =()->multiple.printMultiple(2);
+		Thread t1 = new Thread(r1);
+		t1.start();
 		
+		Runnable r2 =()->multiple.printMultiple(7);
+		Thread t2 = new Thread(r2);
+		t2.start();
 		
 		
 		System.out.println("End details :" +Thread.currentThread().getName() );
